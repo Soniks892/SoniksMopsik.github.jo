@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.firstEx .button {
+			padding: 15px 25px;
+			font-size: 24px;
+			text-align: center;
+			cursor: pointer;
+			outline: none;
+			color:purple;
+			background-color:#7FFF00 ;
+			border: none;
+			border-radius: 111px;
+			box-shadow: 0 9px #999;
+		}
+		.firstEx .button:hover {background-color: #7FFF00}
+		.firstEx .button:active {
+			background-color:#ADFF2F;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+		.secondEx .button {
+			border-radius: 50px;
+			background-color: 	#FF1493;
+			border:none;
+			color: 	#0000CD;
+			text-align: center;
+			font-size: 50px;
+			padding: 20px;
+			width: 200px;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 5px;
+		}
+		.secondEx .button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+		.secondEx .button span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+		.secondEx .button:hover span {
+			padding-right: 25px;
+		}
+		.secondEx .button:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+		.thirdEx .button {
+			position: relative;
+			background-color: #0000FF;
+			border: none;
+			font-size: 28px;
+			color: #FF4500;
+			padding: 20px;
+			width: 200px;
+			text-align: center;
+			-webkit-transition-duration:0.4s;
+			transition-duration: 0.4s;
+			text-decoration: none;
+			overflow: hidden;
+			cursor:pointer;
+			border-radius:5px;
+		}
+		.thirdEx .button:after {
+			content: "";
+			background:	#AFEEEE;
+			display:block;
+			position: absolute;
+			padding-top: 300%;
+			padding-left: 350px;
+			margin-left: -20px!important;
+			margin-top: -120%;
+			opacity: 0;
+			transition: all 0.8s
+		}
+		.thirdEx .button:active:after {
+			padding: 0;
+			margin: 0;
+			opacity: 1;
+			transition: 0s
+		}
+	</style>
+
+</head>
+<body>
+	<div class="firstEx">
+	<h2>"Pressed Effect"</h2>
+    <button class="button">Tẹ mi</button>
+	<button class="button">Klik me</button>
+	<button class="button">Click Me</button>
+	<button class="button">Нажми меня</button>
+	<button class="button">  Hацісні  мяне  !!!!</button>
+    <button class="button">Klicken Sie auf mich</button>
+	</div>
+	<div class="secondEx">
+	<h2>Animated Button</h2>
+	<button class="button"><span>Hover</span></button>
+    </div>
+    <div class="thirdEx">
+    <h2>Ripple Effect</h2>
+    <button class="button">Click Me</button>
+    </div>
+</body>
+</html>
