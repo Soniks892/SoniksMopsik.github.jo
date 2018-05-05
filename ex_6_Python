@@ -1,0 +1,16 @@
+import random
+
+li = []
+value = []
+for i in range(0 ,5):
+	li.append(random.randint(0,9))
+print(li)
+
+for i in li:
+	if li.count(i) == 1:
+		value.append(i)
+		
+for i in value:
+	li.remove(i)
+print(value)
+print(li)
