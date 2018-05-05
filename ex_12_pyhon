@@ -1,0 +1,8 @@
+f = open('input.txt', 'r')
+a = f.read().split()
+delez = int(a[0]) % int(a[1])
+ 
+f.close() 
+l = open('output.txt', 'w')
+l.write(str(delez))
+l.close()
