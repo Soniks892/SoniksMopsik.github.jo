@@ -1,0 +1,11 @@
+f = open('input.txt', 'r')
+a = f.read().split()
+suma = int(a[0]) + 1
+first = 'The next number for ' + str(a[0]) + ' is ' + str(suma) + '.'
+raznost = int(a[0]) - 1
+second = '\n' + 'The previous number for ' + str(a[0]) + ' is ' + str(raznost) + '.'
+f.close() 
+l = open('output.txt', 'w')
+l.write(str(first))
+l.write(str(second))
+l.close()
