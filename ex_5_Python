@@ -1,0 +1,7 @@
+fraza = "Lorem ipsum dolor sit amet consectetuer adipiscing elit"
+word = 1
+print(fraza)
+for i in fraza:
+    if i == ' ':
+        word += 1
+print(word)
