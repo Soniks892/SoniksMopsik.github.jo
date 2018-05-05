@@ -1,0 +1,14 @@
+a = int(input())
+ 
+fib1 = 0
+fib2 = 0
+ 
+while a > 0:
+	if a % 2 == 0:
+		fib1 += 1
+	else:
+		fib2 += 1
+	a = a // 10
+ 
+print(fib1)
+print(fib2)
