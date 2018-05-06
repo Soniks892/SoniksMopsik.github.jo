@@ -1,0 +1,15 @@
+arr = [':D', ': |', ':)', ':(', ':D']
+v_poryadke = ['',':D', ':)', ': |', ':(', 'T_T']
+y = 1
+def sort_emotions(arr, order, y):
+	emodzi = []
+	for y in range(len(v_poryadke)):
+		for i in arr:
+			if order == True:
+				if i == v_poryadke[y]:
+					emodzi.append(i)
+			else:
+				if i == v_poryadke[-y]:
+					emodzi.append(i)
+	print(emodzi)
+sort_emotions(arr,False, y)
