@@ -1,0 +1,7 @@
+import re
+listik = input()
+def nomer(listik):
+    nomerok = re.findall(r'\d{3}-\d{3}-\d{4}\W', listik)
+    print(nomerok)
+nomer(listik)
+
