@@ -1,0 +1,8 @@
+f = open('input.txt', 'r')
+a = f.read().split()
+desatok = int(a[0]) // 10
+f.close() 
+l = open('output.txt', 'w')
+
+l.write(str(desatok))
+l.close()
