@@ -1,0 +1,25 @@
+import re
+name = input()
+nameInStr = input()
+spisname = list(name)
+y = 0
+imya = ''
+blabla = ''
+namik = re.findall(name, nameInStr)
+for i in name:
+	if i in nameInStr:
+		imya += i
+if namik != []:
+	print('все буквы есть, и они по порядку')
+elif imya == '':
+	print('нет букв')
+else:
+	for i in name:
+		if i not in imya:
+			blabla = False
+		else:
+			blabla = True
+if blabla:
+	print('есть все буквы, но они не по порядку')
+elif blabla == False:
+	print('не все буквы есть')
