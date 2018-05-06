@@ -1,0 +1,18 @@
+import re
+sideStreets = input()
+
+do_b_car = 0
+do_c_car = 0
+bcars = re.findall(r'B', sideStreets)
+ccars = re.findall(r'C', sideStreets)
+print(bcars)
+print(ccars)
+spis_side = sideStreets[2:-2]
+spisok_side = spis_side.split(",")
+print(spisok_side)
+for i in spisok_side:
+	if i != '""':
+		break
+	else:
+		do_b_car += 1
+print(do_b_car)
