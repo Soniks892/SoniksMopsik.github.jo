@@ -1,0 +1,5 @@
+l = open("output.txt", "w")
+first = "program HelloWorld;\nbegin\n  WriteLn(" + "'Hello, World!'" + ");\nend."
+
+l.write(str(first))
+l.close()
